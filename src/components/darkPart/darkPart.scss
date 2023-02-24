@@ -1,0 +1,33 @@
+.darkPart {
+   background: #312e2b;
+   display: flex;
+   flex-direction: column;
+   color: rgb(189, 189, 189);
+   height: 100%;
+
+   .photo {
+      border-bottom: 5px solid orange;
+   }
+
+   .personName {
+      font-weight: 900;
+      font-size: 44px;
+      letter-spacing: 5px;
+      line-height: 55px;
+      text-transform: uppercase;
+      margin: 15px 0px;
+   }
+
+   .darkPartTitle {
+      font-size: 20px;
+      padding: 15px 0;
+      border-top: 1px solid rgb(189, 189, 189);
+      border-bottom: 1px solid rgb(189, 189, 189);
+
+      &+.borderLine {
+         border-top: 1px solid orange;
+         border-bottom: 1px solid orange;
+         flex: 1;
+      }
+   }
+}

@@ -1,0 +1,19 @@
+.title {
+   display: flex;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+
+.lightPartTitle {
+   font-size: 28px;
+   padding: 5px 0;
+   border-top: 3px solid orange;
+   border-bottom: 3px solid orange;
+
+   &+.borderLine {
+      border-top: 3px solid rgb(189, 189, 189);
+      border-bottom: 3px solid rgb(189, 189, 189);
+      flex: 1;
+   }
+}
