@@ -1,0 +1,61 @@
+@mixin size($h, $w) {
+   height: $h;
+   width: $w;
+}
+
+@mixin display($df, $jc, $ai) {
+   display: $df;
+   justify-content: $jc;
+   align-items: $ai;
+}
+
+@mixin font($fs, $ff, $fw, $ls, $lh, $color_w) {
+   font-size: $fs;
+   font-family: $ff;
+   font-weight: $fw;
+   letter-spacing: $ls;
+   line-height: $lh;
+   color: $color_w;
+}
+
+@mixin _1200 {
+   @media (max-width: 1200px) {
+      @content;
+   }
+}
+
+@mixin _1024 {
+   @media (max-width: 1024px) {
+      @content;
+   }
+}
+
+@mixin _992 {
+   @media (max-width: 991px) {
+      @content;
+   }
+}
+
+@mixin _768 {
+   @media (max-width: 768px) {
+      @content;
+   }
+}
+
+@mixin _576 {
+   @media (max-width: 576px) {
+      @content;
+   }
+}
+
+@mixin _450 {
+   @media (max-width: 450px) {
+      @content;
+   }
+}
+
+@mixin _350 {
+   @media (max-width: 350px) {
+      @content;
+   }
+}
