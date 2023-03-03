@@ -1,44 +1,62 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from '../../title/Title';
-import { projectsArr } from '../../../constants/projectsArr';
-
-import './projects.scss';
 import ProjectCard from './projectCard/ProjectCard';
+import ProjectLink from './projectLink/ProjectLink';
+import { projectsArr } from '../../../constants/projectsArr';
+import './projects.scss';
+
 
 function Projects() {
-   const [isShow, setIsShow] = useState(true);
+   const [isShowButton, setIsShowButton] = useState(false);
+   const [buttonIndex, setButtonIndex] = useState(null);
+   const [isShowProject, setIsShowProject] = useState(false);
    const [imageIndex, setImageIndex] = useState(null);
 
-   const mouseHandlerEnter = (index) => {
-      setIsShow(false)
+   const handleClick = (index) => {
+      setIsShowProject(true)
       setImageIndex(index)
    }
 
+   const mouseHandlerEnter = (index) => {
+      setButtonIndex(index);
+      setIsShowButton(true);
+   }
+
+
    const mouseHandlerLeave = () => {
-      setIsShow(true)
+      setIsShowProject(false)
+      setButtonIndex(null)
+      setIsShowButton(false);
    }
 
    const { t } = useTranslation();
 
-   const projectImagesArr = projectsArr.map(item => item.image);
-
    return (
       <div className='projects'>
          <Title content={t('projects')} label={'lightPartTitle'} />
-         {isShow && <div className='row'>
-            {projectImagesArr.map((project, index) => (
-               <div className='col-sm-6 p-2' key={index}>
-                  <div>
-                     <img src={project} alt='project' className='projectImg'
-                        onClick={() => mouseHandlerEnter(index)} />
+         {!isShowProject && <div className='row'>
+            {projectsArr.map((project, index) => (
+               <div className='col-sm-6 p-2' key={index} id={`image${index}`}
+                  onMouseEnter={() => mouseHandlerEnter(index)}
+                  onMouseLeave={() => mouseHandlerLeave()}
+               >
+                  <div className='projectImgWrap'>
+                     <img src={project.image} alt='project' className='projectImg' />
+                     {(isShowButton && buttonIndex === index) && < div className='showMoreButton'>
+                        <div className="btn btn-outline-secondary"
+                           onClick={() => handleClick(index)}
+                        >show more</div>
+                     </div>
+                     }
                   </div>
                </div>
             ))
             }
          </div>
          }
-         {!isShow &&
+         {
+            isShowProject &&
             <div onMouseLeave={() => mouseHandlerLeave()}>
                <ProjectCard index={imageIndex} />
             </div>

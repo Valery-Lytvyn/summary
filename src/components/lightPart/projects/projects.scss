@@ -1,10 +1,21 @@
 @import '../../../assets/scss_styles/global-imports';
 
-.projectImg {
-   box-shadow: 0px 0px 5px 1px $color_dark_gray;
-   @include size($h, $w);
+.projectImgWrap {
+   position: relative;
+   display: flex;
+   justify-content: center;
 
-   &:hover {
-      box-shadow: 0px 0px 5px 1px $color_orange;
+   .projectImg {
+      box-shadow: 0px 0px 5px 1px $color_dark_gray;
+      @include size($h, $w);
+
+      &:hover {
+         box-shadow: 0px 0px 5px 1px $color_orange;
+      }
+   }
+
+   .showMoreButton {
+      position: absolute;
+      bottom: 5px;
    }
 }

@@ -14,19 +14,23 @@ function ProjectCard({ index }) {
    return (
       <div className='projectCard p-0'>
          <Card >
-            <Card.Img variant='top' src={image} />
+            <div className="projectImgWrap">
+               <Card.Img variant='top' src={image} />
+               <div className='projectLinkWrapper'>
+                  <div>
+                     <a href={link} className='projectLink' target="_blank" rel="noopener noreferrer">{linkText} </a>
+                  </div>
+                  <div>
+                     <a href={githubLink} className='projectGitLink' target="_blank" rel="noopener noreferrer">{githubLinkText} </a>
+                  </div>
+               </div>
+            </div>
             <Card.Body>
                <div className='projectTitle'>{title}</div>
                <div className='projectMotto'> {motto}</div>
                <div className='projectText'> {description}</div>
-               <div className='projectLinkWrapper'>
-                  <a href={link} className='projectLink' target="_blank" rel="noopener noreferrer">{linkText} </a>
-               </div>
-               <div className='projectLinkWrapper'>
-                  <a href={githubLink} className='projectGitLink' target="_blank" rel="noopener noreferrer">{githubLinkText} </a>
-               </div>
             </Card.Body>
-         </Card>
+         </Card >
       </div >
    )
 }

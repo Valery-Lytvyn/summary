@@ -5,30 +5,13 @@
    border: 2px solid $color_gray;
    border-radius: 5px;
 
-   .card-body {
-      border-top: 2px solid $color_orange;
-
-   }
-
-   .projectTitle {
-      font-size: 26px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      line-height: 28px;
-      text-align: center;
-      text-transform: uppercase;
-      padding: 10px 0px;
-   }
-
-   .projectMotto {
-      font-size: 20px;
-      font-weight: 400;
-   }
-
    .projectLinkWrapper {
       display: flex;
-      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
+      flex-direction: column;
+      position: absolute;
+      bottom: 5px;
 
       .projectLink,
       .projectGitLink {
@@ -45,6 +28,25 @@
             color: #0000ff;
          }
       }
+   }
+
+   .card-body {
+      border-top: 2px solid $color_orange;
+   }
+
+   .projectTitle {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px 0px;
+   }
+
+   .projectMotto {
+      font-size: 20px;
+      font-weight: 400;
    }
 
    .projectText {
