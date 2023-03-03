@@ -1,4 +1,5 @@
 import Resume from './components/resume/Resume';
+import './i18n'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 

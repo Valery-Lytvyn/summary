@@ -1,0 +1,26 @@
+@import '../../assets/scss_styles/global-imports';
+
+.orangePart {
+   background: #ffb347;
+   line-height: 22px;
+   letter-spacing: 1px;
+   font-weight: 600;
+   color: $color_leaden;
+   padding: 10px 0 10px;
+
+   .orangePartTitle {
+      font-weight: 600;
+      font-size: 26px;
+      padding: 5px 0;
+      margin: 10px 0;
+      border-top: 2px solid rgb(85, 84, 84);
+      border-bottom: 2px solid rgb(85, 84, 84);
+
+      &+.borderLine {
+         margin: 10px 0;
+         border-top: 2px solid #fff;
+         border-bottom: 2px solid #fff;
+         flex: 1;
+      }
+   }
+}

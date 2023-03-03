@@ -1,0 +1,9 @@
+@import '../../../../assets/scss_styles/_global-imports';
+
+.logo {
+   color: $color_gray;
+   @include size(30px, 30px);
+   font-size: 18px;
+   border-radius: 50%;
+   @include display($flex, $start, $ai_center);
+}

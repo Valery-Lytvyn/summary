@@ -1,0 +1,32 @@
+@import '../../../assets/scss_styles/global-imports';
+
+.contacts {
+   display: $flex;
+   flex-direction: column;
+
+   :hover {
+      color: $color_orange;
+   }
+
+   .contactItem {
+      display: $flex;
+      align-items: $ai_center;
+      flex-wrap: nowrap;
+      height: 40px;
+      // line-height: 40px;
+
+      .contactInfo {
+         text-align: left;
+         padding-left: 10px;
+
+         :hover {
+            color: $color_orange;
+         }
+
+         a {
+            color: $color_gray;
+            text-decoration: none;
+         }
+      }
+   }
+}

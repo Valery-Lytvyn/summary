@@ -3,7 +3,10 @@
 .App {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
+   line-height: 24px;
    background: rgba(255, 255, 255, 0.89);
-   min-width: 100%;
-   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* background: #dddbd8; */
 }

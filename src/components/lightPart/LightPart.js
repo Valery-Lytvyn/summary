@@ -1,28 +1,28 @@
 import React from 'react';
+import LanguageSelection from './languageSelection/LanguageSelection';
+import './lightPart.scss';
+import Summary from './summary/Summary';
+import Projects from './projects/Projects';
+import SoftSkills from './softSkills/SoftSkills';
+import HardSkills from '../hardSkills/HardSkills';
+import LanguageSkils from '../languageSkils/LanguageSkils';
+
 
 function LightPart() {
    return (
-      <div className='light_part my-0 mx-4'>
-         Light Part
-         {/* <div className='lang_select_wrapp'>
-            <LangSelect languageСhoiceArr={languageСhoiceArr} />
+      <div className='lightPart m-0'>
+         <div className="container">
+            <div className='d-none d-md-block' >
+               <LanguageSelection />
+            </div>
+            <Summary />
+            <Projects />
+            <SoftSkills />
+            <div className='d-block d-md-none' >
+               <HardSkills />
+               <LanguageSkils />
+            </div>
          </div>
-         <Title content={t('summary')} label={'light_part_title'} />
-         <ContainsText text={t('summaryText')} />
-         <Title content={t('skills')} label={'light_part_title'} />
-         <div className='d-flex'>
-            <List arr={hardSkills} />
-            <AnimationIcon />
-         </div>
-         <Title content={t('projects')} label={'light_part_title'} />
-         <Projects arr={projectsArr()} />
-         <Title content={t('education')} label={'light_part_title'} />
-         <ContainsText text={t('university')} />
-         <ContainsText text={t('profession')} />
-         <Title content={t('experience')} label={'light_part_title'} />
-         <ContainsText text={t('position')} />
-         <Title content={t('softSkills')} label={'light_part_title'} />
-         <List arr={softSkillsArr()} /> */}
       </div>
    )
 }

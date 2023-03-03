@@ -1,0 +1,21 @@
+@import '../../../assets/scss_styles/global-imports';
+
+.languageSelection {
+   @include display($flex, $end, $ai_center);
+
+   .togglebutton {
+      width: 80px;
+      min-height: 25px;
+      display: flex;
+      border: 1px solid $color_orange;
+      box-shadow: 0px 0px 5px 1px $color_dark_gray;
+
+      .button {
+         width: 50%;
+         height: 100%;
+         text-align: center;
+         color: $color_dark_gray;
+         font-weight: 600;
+      }
+   }
+}

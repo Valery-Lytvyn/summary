@@ -1,33 +1,45 @@
+@import '../../assets/scss_styles/global-imports';
+
 .darkPart {
-   background: #312e2b;
-   display: flex;
+   background: $color_dark_gray;
+   display: $flex;
    flex-direction: column;
-   color: rgb(189, 189, 189);
+   color: $color_gray;
    height: 100%;
 
    .photo {
-      border-bottom: 5px solid orange;
+      border-bottom: 7px solid $color_orange;
    }
 
-   .personName {
-      font-weight: 900;
+   .fullName {
+      font-weight: 800;
       font-size: 44px;
       letter-spacing: 5px;
       line-height: 55px;
       text-transform: uppercase;
       margin: 15px 0px;
+      color: $color_gray;
    }
+
+
 
    .darkPartTitle {
       font-size: 20px;
-      padding: 15px 0;
-      border-top: 1px solid rgb(189, 189, 189);
-      border-bottom: 1px solid rgb(189, 189, 189);
+      padding: 5px 0;
+      border-top: 1px solid $color_gray;
+      border-bottom: 1px solid $color_gray;
 
       &+.borderLine {
-         border-top: 1px solid orange;
-         border-bottom: 1px solid orange;
+         border-top: 1px solid $color_orange;
+         border-bottom: 1px solid $color_orange;
          flex: 1;
       }
+   }
+
+   .speciality {
+      font-weight: 800;
+      font-size: 28px;
+      letter-spacing: 3px;
+      padding: 10px 0;
    }
 }
