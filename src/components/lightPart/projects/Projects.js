@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from '../../title/Title';
 import ProjectCard from './projectCard/ProjectCard';
-import ProjectLink from './projectLink/ProjectLink';
 import { projectsArr } from '../../../constants/projectsArr';
 import './projects.scss';
-
 
 function Projects() {
    const [isShowButton, setIsShowButton] = useState(false);
@@ -22,7 +20,6 @@ function Projects() {
       setButtonIndex(index);
       setIsShowButton(true);
    }
-
 
    const mouseHandlerLeave = () => {
       setIsShowProject(false)

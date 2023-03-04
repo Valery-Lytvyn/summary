@@ -10,7 +10,6 @@ function ProjectCard({ index }) {
    const { title, motto, description } = projectDescription;
    const { image, link, linkText, githubLink, githubLinkText } = projectsArr[index];
 
-
    return (
       <div className='projectCard p-0'>
          <Card >
