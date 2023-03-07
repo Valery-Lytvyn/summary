@@ -51,12 +51,17 @@ i18n
                profession: 'Construction of oil and gas pipelines and storage facilities',
                experience: 'experience',
                position: 'PJSC SINTEZ OIL - Accountant of the control and audit department (07.2010-07.2022)',
-               softSkills: ' soft Skills',
+               professional_duties: [
+                  'Compilation of reports on the accounting of petroleum products',
+                  'Conducting monthly inventories',
+                  'Analysis of occurrence of losses and surpluses of oil products'
+               ],
+               softSkills: 'soft Skills',
                softSkillsArr: [
                   'Honesty, decency, responsibility.',
-                  "Ability to concentrate on set goals, initiative, analytical thinking.",
-                  "Experience working with a lot of information.",
-                  "Desire to acquire new knowledge and skills",
+                  'Ability to concentrate on set goals, initiative, analytical thinking.',
+                  'Experience working with a lot of information.',
+                  'Desire to acquire new knowledge and skills',
                ],
             }
          },
@@ -101,6 +106,11 @@ i18n
                profession: 'Спорудження газонафтопроводів та газонафтосховищ',
                experience: 'Досвід роботи',
                position: 'ПрАТ “Синтез Ойл” - Обліковець контрольно-ревізійного відділу (07.2010-07.2022)',
+               professional_duties: [
+                  'Складання звітів по обліку нафтопродуктів',
+                  'Проведення щомісячних інвентаризацій',
+                  'Аналіз виникнення втрат та надлишків нафтопродуктів'
+               ],
                softSkills: 'Ключові навички',
                softSkillsArr: [
                   'Чесність, порядність, відповідальність.',
@@ -114,5 +124,6 @@ i18n
    });
 
 export default i18n;
+
 
 

@@ -35,7 +35,7 @@ export const createLanguageSkilsArr = () => {
    return (
       [
          { lang: TranslationHook('ukrainian'), level: 'C2' },
-         { lang: TranslationHook('english'), level: 'A1' },
+         { lang: TranslationHook('english'), level: 'A2' },
       ]
    )
 }
