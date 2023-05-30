@@ -2,10 +2,10 @@ import React from 'react';
 import LanguageSelection from './languageSelection/LanguageSelection';
 import './lightPart.scss';
 import Summary from './summary/Summary';
-import Projects from './projects/Projects';
 import SoftSkills from './softSkills/SoftSkills';
 import HardSkills from '../hardSkills/HardSkills';
 import LanguageSkils from '../languageSkils/LanguageSkils';
+import Portfolio from './portfolio/Portfolio';
 
 
 function LightPart() {
@@ -16,7 +16,7 @@ function LightPart() {
                <LanguageSelection />
             </div>
             <Summary />
-            <Projects />
+            <Portfolio />
             <SoftSkills />
             <div className='d-block d-md-none' >
                <HardSkills />
